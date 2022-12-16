@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.trabalhoguilherme.TelaPrincipalController">
+    <children>
+    <PieChart layoutX="350.0" layoutY="193.0" prefHeight="263.0" prefWidth="326.0" title="grafico de pizza" />
+    <TableView fx:id="tabela" layoutX="9.0" layoutY="193.0" prefHeight="263.0" prefWidth="318.0">
+        <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+    </TableView>
+    <Button fx:id="addDespesa" layoutX="527.0" layoutY="129.0" mnemonicParsing="false" onAction="#addDespesa" prefHeight="25.0" prefWidth="149.0" text="Registrar Despesa" />
+    <Button fx:id="addReceita" layoutX="527.0" layoutY="88.0" mnemonicParsing="false" onAction="#addReceita" prefHeight="25.0" prefWidth="149.0" text="Registrar Receitar" />
+    <Separator layoutY="162.0" prefHeight="25.0" prefWidth="687.0" />
+    <Label layoutX="45.0" layoutY="101.0" text="Saldo Atual">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="204.0" layoutY="101.0" text="Saldo Previsto">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="356.0" layoutY="101.0" text="Última Movimentação">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="204.0" layoutY="24.0" text="MOVIMENTAÇÕES FINANCEIRAS">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Separator layoutX="-1.0" layoutY="58.0" prefHeight="25.0" prefWidth="687.0" />
+    <Separator layoutX="147.0" layoutY="71.0" orientation="VERTICAL" prefHeight="103.0" prefWidth="27.0" />
+    <Separator layoutX="324.0" layoutY="70.0" orientation="VERTICAL" prefHeight="403.0" prefWidth="27.0" />
+    <Separator layoutX="499.0" layoutY="71.0" orientation="VERTICAL" prefHeight="103.0" prefWidth="27.0" />
+    <Label fx:id="valorSaldoAtual" layoutX="37.0" layoutY="128.0" prefHeight="27.0" prefWidth="87.0" text=" " />
+    <Label fx:id="valorSaldoPrevisto" layoutX="204.0" layoutY="128.0" prefHeight="27.0" prefWidth="87.0" text=" " />
+    <Label fx:id="valorUltMovimentacao" layoutX="380.0" layoutY="128.0" prefHeight="27.0" prefWidth="87.0" text=" " />
+    <Label layoutX="19.0" layoutY="132.0" text="R$">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="186.0" layoutY="132.0" text="R$">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="361.0" layoutY="132.0" text="R$">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Label>
+    </children>
+</Pane>
